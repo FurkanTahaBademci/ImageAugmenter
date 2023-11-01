@@ -18,15 +18,13 @@ python main.py --input <input-images> --output <output-images> --type <image-typ
 
 ### Features that you can use
 
-- Crypto price info  
-- Screenshot
-- Screenrecord
-- Voice Record
-- Slepping off the computer
-- Turning off the computer
-- Cancellation of computer shutdown
-- Locking the computer
-- Write text
+- Snowy 
+- Rainy
+- Bright
+- Dark
+- Shadowy
+- Speedy
+
 
 ### Uygulamayı çalıştır
 

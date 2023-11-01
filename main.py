@@ -47,13 +47,15 @@ def create_directories(output_path, *directories):
         os.makedirs(os.path.join(output_path, directory), exist_ok=True)
 
 def process_image(output, img, copy, folder, processed_image, image_type, time_path):
-    image_name = f"data_augmente_{time.time()}.{image_type}"
+    file_name = os.path.basename(img)
+    file_name_without_extension = os.path.splitext(file_name)[0]
+    image_name = f"{file_name_without_extension}_{folder}_{time.time()}.{image_type}"
     if copy:
-        txt_name = os.path.basename(img).replace(f".{image_type}",".txt")
+        txt_name = file_name.replace(f".{image_type}", ".txt")
         txt_path_new = os.path.join(output, folder, txt_name)
-        txt_path_before = img.replace(f".{image_type}",".txt")
-        shutil.copy(txt_path_before,txt_path_new)
+        txt_path_before = img.replace(f".{image_type}", ".txt")
+        shutil.copy(txt_path_before, txt_path_new)
     cv2.imwrite(os.path.join(output, folder, image_name), processed_image)
-
+    
 if __name__ == "__main__":
     main()

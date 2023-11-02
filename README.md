@@ -40,5 +40,6 @@ python main.py --input <input-images> --output <output-images> --type <image-typ
 
 ## Authors
 
-- [@oguzaybilir](https://github.com/oguzaybilir)
 - [@FurkanTahaBademci](https://github.com/FurkanTahaBademci)
+- [@oguzaybilir](https://github.com/oguzaybilir)
+- [@BusraKz](https://github.com/BusraKz)

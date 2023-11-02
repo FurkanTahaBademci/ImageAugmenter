@@ -36,3 +36,9 @@ python main.py --input <input-images> --output <output-images> --type <image-typ
 - Dark
 - Shadowy
 - Speedy
+
+
+## Authors
+
+- [@oguzaybilir](https://github.com/oguzaybilir)
+- [@FurkanTahaBademci](https://github.com/FurkanTahaBademci)

@@ -1,22 +1,34 @@
-# ImageAugmentor
+# ImageAugmenter
 
-### Run the application
+### This repository has been made for situations that you are not be able to gather data. 
 
-### Clone Repository
 
-~~~
+
+
+
+# Clone Repository
+
+```
 git clone https://github.com/FurkanTahaBademci/ImageAugmentor.git
-~~~~~~~~
+```
+# Run
 
-### Start Code
+### The way you run this app depends on your python version.
 
+
+- for python3
 ~~~
-python main.py --input <input-images> --output <output-images> --type <image-type> 
-~~~~~~~~
+python3 main.py --input <input-images> --output <output-images> --type <image-type> --copy_txt
+~~~
 
-### Telegram allows you to communicate via bot with python code running on your computer. You can send messages to the bot via telegram and provide remote control with your password. You can perform the tasks defined in the messages remotely. These tasks are set out below
+- python
+~~~
+python main.py --input <input-images> --output <output-images> --type <image-type> --copy_txt
+~~~
 
-### Features that you can use
+# Options to augment your data
+
+### There is some ways for you to know what kind of augments you could able to do with this repository.
 
 - Snowy 
 - Rainy
@@ -24,22 +36,3 @@ python main.py --input <input-images> --output <output-images> --type <image-typ
 - Dark
 - Shadowy
 - Speedy
-
-
-### Uygulamayı çalıştır
-
-### src > cfg.py içeriğini düzenle
-
-### Telegram, bilgisayarınızda çalışan python koduyla bot üzerinden iletişim kurmanızı sağlar. Bota telegram üzerinden mesaj gönderebilir ve şifrenizle uzaktan kumanda sağlayabilirsiniz. İletilerde tanımlanan görevleri uzaktan gerçekleştirebilirsiniz. Bu görevler aşağıda belirtilmiştir
-
-### Kullanabileceğiniz özellikler
-
-- Kripto fiyat bilgisi
-- Ekran Görüntüsü
-- Ekran Kaydı
-- Ses Kaydı
-- Bilgisayarı uykuya alma
-- Bilgisayarı kapatma
-- Bilgisayar kapatma işlemini iptal etme
-- Bilgisayarı kilitleme
-- Yazı yazma

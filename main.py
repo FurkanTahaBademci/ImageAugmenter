@@ -1,7 +1,7 @@
 import argparse
 import Automold as am
 import glob
-import cv2 
+import cv2
 from tqdm import tqdm
 import os
 import time

@@ -2,7 +2,7 @@
 
 ### This repository has been made for situations that you are not be able to gather data. 
 
-
+https://github.com/FurkanTahaBademci/ImageAugmenter/assets/95905794/90905287-7f11-42e3-972f-fbba7d995ffa
 
 
 
@@ -43,5 +43,9 @@ python main.py --input <input-images> --output <output-images> --type <image-typ
 - [@FurkanTahaBademci](https://github.com/FurkanTahaBademci)
 - [@oguzaybilir](https://github.com/oguzaybilir)
 - [@BusraKz](https://github.com/BusraKz)
+
+
+
+
 
 

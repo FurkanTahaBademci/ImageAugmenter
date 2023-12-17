@@ -2,7 +2,11 @@
 
 ### This repository has been made for situations that you are not be able to gather data. 
 
-https://github.com/FurkanTahaBademci/ImageAugmenter/assets/95905794/90905287-7f11-42e3-972f-fbba7d995ffa
+
+
+
+https://github.com/FurkanTahaBademci/ImageAugmenter/assets/95905794/a986148f-8b7b-499a-8435-aa52b817d109
+
 
 
 

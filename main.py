@@ -37,10 +37,10 @@ def main():
 
         process_image(output, img, copy_txt, "snowy", snowy_images, image_type)
         process_image(output, img, copy_txt, "rainy", rainy_images, image_type)
-        process_image(output, img, False, "bright", bright_image, image_type)
-        process_image(output, img, False, "dark", dark_image, image_type)
-        process_image(output, img, False, "shadowy", shadowy_images, image_type)
-        process_image(output, img, False, "speedy", speedy_images, image_type)
+        process_image(output, img, copy_txt, "bright", bright_image, image_type)
+        process_image(output, img, copy_txt, "dark", dark_image, image_type)
+        process_image(output, img, copy_txt, "shadowy", shadowy_images, image_type)
+        process_image(output, img, copy_txt, "speedy", speedy_images, image_type)
 
 
 def create_directories(output_path, *directories):
@@ -52,10 +52,14 @@ def process_image(output, img, copy, folder, processed_image, image_type):
     file_name_without_extension = os.path.splitext(file_name)[0]
     image_name = f"{file_name_without_extension}_{folder}.{image_type}"
     if copy:
-        txt_name = file_name.replace(f".{image_type}", ".txt")
-        txt_path_new = os.path.join(output, folder, txt_name)
-        txt_path_before = img.replace(f".{image_type}", ".txt")
-        shutil.copy(txt_path_before, txt_path_new)
+        # The label must share the augmented image's stem so YOLO can pair them.
+        # Effects are photometric, so the original boxes stay valid unchanged.
+        txt_path_before = os.path.splitext(img)[0] + ".txt"
+        txt_path_new = os.path.join(output, folder, f"{file_name_without_extension}_{folder}.txt")
+        if os.path.exists(txt_path_before):
+            shutil.copy(txt_path_before, txt_path_new)
+        else:
+            print(f"[WARN] Label not found, skipped: {txt_path_before}")
     cv2.imwrite(os.path.join(output, folder, image_name), processed_image)
 
     
